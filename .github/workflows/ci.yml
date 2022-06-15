@@ -20,13 +20,13 @@ jobs:
     - run: npm run build
 
     - name: Deploy to Pages
-        run: |
-          cd dist 
-          git init
-          git config user.name "lxdora"
-          git config user.email "${{ secrets.GIT_EMAIL }}"
-          git add -A
-          git commit -m 'deploy'
-          git push -f https://lxdora:${{ secrets.ACCESS_TOKEN }}@github.com/lxdora/vue-drag-group master:gh-pages
+      run: |
+        cd dist 
+        git init
+        git config user.name "lxdora"
+        git config user.email "${{ secrets.GIT_EMAIL }}"
+        git add -A
+        git commit -m 'deploy'
+        git push -f https://lxdora:${{ secrets.ACCESS_TOKEN }}@github.com/lxdora/vue-drag-group master:gh-pages
 
-          cd -
+        cd -
