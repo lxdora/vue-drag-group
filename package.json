@@ -11,9 +11,9 @@
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --dest dist --name VueDragGroup ./src/index.js",
     "lint": "vue-cli-service lint",
-    "gh-pages:clean": "rm -rf dist",
-    "gh-pages:build": "vue-cli-service build --dest dist",
-    "gh-pages:publish": "$(npm bin)/git-directory-deploy --directory dist",
+    "gh-pages:clean": "rm -rf docs",
+    "gh-pages:build": "vue-cli-service build --dest docs",
+    "gh-pages:publish": "$(npm bin)/git-directory-deploy --directory docs",
     "gh-pages": "npm run gh-pages:clean && npm run gh-pages:build && npm run gh-pages:publish"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "babel-preset-env": "^1.7.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.9",
+    "git-directory-deploy": "^1.5.1",
     "sass": "^1.52.1",
     "sass-loader": "8",
     "vue": "^2.6.11",
@@ -65,7 +66,7 @@
   "keywords": [
     "vue",
     "component",
-    "dragabble",
-    "resizable"
+    "drag",
+    "group"
   ]
 }

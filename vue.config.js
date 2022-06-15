@@ -9,5 +9,5 @@ module.exports = {
     }
   },
   productionSourceMap: false,
-  publicPath: '/'
+  publicPath: '/vue-drag-group'
 };
